@@ -6,3 +6,9 @@
 - Map reduce ==> procecing les traitements
 - les données sont trois types : structure, non structure, semi-structure
 - cluster
+# HADOOP 
+Framework basée sur java. c'est open source
+- HDFS
+- MAP&REDUCE
+- Hadoop yarn : négocier les ressources de cluster
+- Rack , data node , name node 
