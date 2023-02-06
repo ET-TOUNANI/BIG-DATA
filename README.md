@@ -5,3 +5,4 @@
 - Hadoop HDFS => le stockage réplication pour éviter la  tolérance en panne.
 - Map reduce ==> procecing les traitements
 - les données sont trois types : structure, non structure, semi-structure
+- cluster
