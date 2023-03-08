@@ -31,21 +31,20 @@ public class ex1 {
         JavaRDD<Integer> javaRDD71=javaRDD5.map(a->a+1);
         JavaRDD<Integer> javaRDD81=javaRDD6.map(a->a-1);
 
-        JavaPairRDD<String,Integer>javaRDD7=javaRDD1.mapToPair(nm-> Tuple2.apply(nm,nm.length()));
+        JavaPairRDD<String,Integer>javaRDDd7=javaRDD1.mapToPair(nm-> Tuple2.apply(nm,nm.length()));
 
-        JavaRDD<Integer> javaRDD7g=javaRDD5.map(a->a+1);
-        JavaRDD<Integer> javaRDD8=javaRDD6.map(a->a-1);
+        JavaRDD<Integer> javaRDDk7=javaRDD5.map(a->a+1);
+        JavaRDD<Integer> javaRDDk8=javaRDD6.map(a->a-1);
+
+        JavaPairRDD<String,Integer>javaRDD7=javaRDDd7.reduceByKey((n,m)->n+m);
+        JavaPairRDD<String,Integer>javaRDD8=javaRDDd7.reduceByKey((n,m)->n-m);
+
+        JavaPairRDD<String,Integer>javaRDD9=javaRDD7.union(javaRDD8);
+        JavaPairRDD<String,Integer>javaRDD10=javaRDD9.sortByKey();
 
 
 
-
-
-
-
-
-        List<Double> notes=javaRDD3.collect();
-        for(double n:notes){
-            System.out.println(n);
-        }
+        List<Tuple2<String,Integer>> javaRDD = javaRDD10.collect() ;
+        for (Tuple2<String,Integer> w:javaRDD) System.out.println(w._1() + " " + w._2());
     }
 }
