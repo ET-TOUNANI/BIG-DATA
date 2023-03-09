@@ -46,5 +46,6 @@ public class ex1 {
 
         List<Tuple2<String,Integer>> javaRDD = javaRDD10.collect() ;
         for (Tuple2<String,Integer> w:javaRDD) System.out.println(w._1() + " " + w._2());
+        sc.close();
     }
 }

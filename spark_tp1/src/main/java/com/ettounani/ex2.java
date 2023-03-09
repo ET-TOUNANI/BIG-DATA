@@ -24,5 +24,6 @@ public class ex2 {
         for (Tuple2<String,Double> j:jd) {
             System.out.println(j._1+" "+j._2);
         }
+        sc.close();
     }
 }
