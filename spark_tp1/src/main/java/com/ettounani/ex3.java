@@ -16,10 +16,10 @@ public class ex3 {
         JavaSparkContext sparkContext = new JavaSparkContext(conf);
         JavaRDD<String> javaRDD = sparkContext.textFile("src/main/resources/2020.csv");
         JavaRDD<List<String>> javaRDD2 = javaRDD.map(a -> Arrays.asList(a.split(",")));
-        JavaPairRDD<Integer, String> javaPairRDD = javaRDD2.mapToPair((n) -> Tuple2.apply(Integer.parseInt(n.get(3)), n.get(2)));
-        JavaPairRDD<Integer, String> javaPairRDD1 = javaPairRDD.sortByKey(false);// change false to true if u want the max
-
-        List<Tuple2<Integer, String>> data = javaPairRDD1.collect();
+        JavaPairRDD<String,Integer > javaPairRDD = javaRDD2.mapToPair((n) -> Tuple2.apply(n.get(2),Integer.parseInt(n.get(3)) ));
+        JavaPairRDD<String, Integer> javaPairRDD1 = javaPairRDD.reduceByKey((integer, integer2) ->(integer>integer2)?integer:integer2 );
+        //JavaPairRDD<String    , Integer> javaPairRDD1 = javaPairRDD.sortByKey(false);// change false to true if u want the max
+        List<Tuple2<String,Integer >> data = javaPairRDD1.collect();
         System.out.println(data.get(0)._1 + " " + data.get(0)._2); // print the min
         sparkContext.close();
     }
