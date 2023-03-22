@@ -10,7 +10,7 @@ import scala.Tuple2;
 
 import java.util.Arrays;
 
-public class Main {
+public class WordCount {
     public static void main(String[] args) throws InterruptedException {
         SparkConf conf=new SparkConf().setAppName("StreamProcessing").setMaster("local[*]");
         JavaStreamingContext streamingContext=new JavaStreamingContext(conf,new  Duration(2000));
@@ -21,6 +21,5 @@ public class Main {
         wordCounts.print();
         streamingContext.start();
         streamingContext.awaitTermination();
-
     }
 }

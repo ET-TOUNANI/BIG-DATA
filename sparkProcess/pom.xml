@@ -19,7 +19,6 @@
         <artifactId>spark-core_2.13</artifactId>
         <version>3.3.2</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-streaming -->
     <dependency>
         <groupId>org.apache.spark</groupId>
         <artifactId>spark-streaming_2.13</artifactId>
