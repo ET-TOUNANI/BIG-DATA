@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Abderrahmane Ettounani",
+    "age": 21,
+    "salary": 150000,
+    "departement": "info"
+  },
+  {
+    "id": 7,
+    "name": "Hassan ouadouch",
+    "age": 21,
+    "salary": 90000,
+    "departement": "eco"
+  },
+  {
+    "id": 2,
+    "name": "youssef Ettounani",
+    "age": 17,
+    "salary": 100000,
+    "departement": "eco"
+  },
+  {
+    "id": 3,
+    "name": "oumaima Ettounani",
+    "age": 19,
+    "salary": 90000,
+    "departement": "info"
+  },
+  {
+    "id": 4,
+    "name": "Khaidja khayer eddine",
+    "age": 49,
+    "salary": 80000,
+    "departement": "eco"
+  },
+  {
+    "id": 5,
+    "name": "Ahmed Ettounani",
+    "age": 70,
+    "salary": 170000,
+    "departement": "info"
+  }
+]
