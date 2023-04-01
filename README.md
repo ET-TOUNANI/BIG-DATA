@@ -1,20 +1,39 @@
-# BIG-DATA
+# Big Data
+## Syllabus
+> Module 1 - What is Big Data?
 
-- avec l'implusion des données => la naissance du notion de big Data
-- pour vérifier que nous avons dans un problème BIGDaTA nous avons 5V: volume, vélocité, varieté, valeur, véracity
-- Hadoop HDFS => le stockage réplication pour éviter la tolérance en panne.
-- Map reduce ==> procecing les traitements
-- les données sont trois types : structure, non structure, semi-structure
-- cluster
+```sh
+Characteristics of Big Data
+What are the V’s of Big Data?
+The Impact of Big Data
+```
 
-# HADOOP
+> Module 2 - Big Data - Beyond the Hype
 
-Framework basée sur java. c'est open source
+```sh
+Big Data Examples
+Sources of Big Data
+Big Data Adoption
+```
+> Module 3 - The Big Data and Data Science
 
-- HDFS
-- MAP&REDUCE
-- Hadoop yarn : négocier les ressources de cluster
-- Rack , data node , name node
+```sh
+The Big Data Platform
+Big Data and Data Science
+Skills for Data Scientists
+The Data Science Process
+```
+> Module 4 - Big Data Use Cases
 
-https://youtu.be/XWwg-T-fE_E
-https://insatunisia.github.io/TP-BigData/tp1/
+```sh
+Big Data Exploration
+The Enhanced 360 View of a Customer
+Security and Intelligence
+Operations Analysis
+```
+> Module 5 - Processing Big Data
+
+```sh
+Ecosystems of Big Data
+The Hadoop Framework
+```
