@@ -37,3 +37,15 @@ Operations Analysis
 Ecosystems of Big Data
 The Hadoop Framework
 ```
+
+## to see
+### What You’ll Learn
+  - Through narrated lecture, recorded demonstrations, and hands-on exercises,you will learn how to:
+  - How to use Apache Spark to run data science and machine learning workflows at scale
+  - How to use Spark SQL and DataFrames to work with structured data
+  - How to use MLlib, Spark’s machine learning library
+  - How to use PySpark, Spark’s Python API
+  - How to use sparklyr, a dplyr-compatible R interface to Spark
+  - How to use Cloudera Data Science Workbench (CDSW)
+  - How to use other Cloudera platform components including HDFS, Hive,
+  - Impala, and Hue
