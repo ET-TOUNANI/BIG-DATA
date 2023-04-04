@@ -38,7 +38,7 @@ Ecosystems of Big Data
 The Hadoop Framework
 ```
 
-## to see
+## DATA
 ### What You’ll Learn
   - Through narrated lecture, recorded demonstrations, and hands-on exercises,you will learn how to:
   - How to use Apache Spark to run data science and machine learning workflows at scale
