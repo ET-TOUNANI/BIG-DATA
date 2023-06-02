@@ -13,7 +13,5 @@ public class Main {
         Dataset<Row> emp=ss.read().option("multiline",true).json("data.json");
         emp.select("departement","salary").groupBy("departement").avg("salary").show();
 
-
-
     }
 }

@@ -12,7 +12,8 @@ import java.util.List;
 public class ex2 {
     public static void main(String[] args) {
         SparkConf sparkConf=new SparkConf();
-        sparkConf.setAppName("Exercice 2").setMaster("local[*]");
+        //sparkConf.setAppName("Exercice 2").setMaster("local[*]");spark://ETTOUNANI.:7077
+        sparkConf.setAppName("Exercice 2").setMaster("spark://ETTOUNANI.:7077");
         JavaSparkContext sc=new JavaSparkContext(sparkConf);
 
         JavaRDD<String> javaRDD1=sc.textFile("src/main/resources/ventes.txt");
